@@ -8,7 +8,7 @@ PHP上传Excel,并将数据导入数据库,使用PHPEXCEL类
  
  
  - 修改如下：
- 
+``` 
  $sql='insert into think_excel (id,name) values ';
  for ($row = 2; $row <= $highestRow; $row++){//行数是以第1行开始
 		$i=0;
@@ -22,3 +22,4 @@ PHP上传Excel,并将数据导入数据库,使用PHPEXCEL类
   mysqli_query($conn,$sql);
 	echo mysqli_error($conn);
   $dataset=array();
+  ```
